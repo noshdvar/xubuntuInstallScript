@@ -19,7 +19,8 @@ sudo pacman -S --needed --noconfirm \
     ffmpeg \
     vlc \
     unzip \
-    unrar
+    unrar \
+    pamac-qt
 
 echo "=== Flathub aktivieren ==="
 sudo flatpak remote-add --if-not-exists flathub \
