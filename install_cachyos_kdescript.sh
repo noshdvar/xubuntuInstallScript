@@ -81,7 +81,8 @@ sudo pacman -S --needed --noconfirm \
     qpwgraph \
     digikam \
     scribus \
-    synchthing
+    synchthing \
+    ksnip
 
 
 echo "=== Multimedia / Codec Support ==="
@@ -116,7 +117,6 @@ flatpak install -y flathub \
     app.drey.EarTag \
     com.spotify.Client \
     io.anytype.anytype \
-    org.ksnip.ksnip \
     org.kde.plasmatube \
     com.github.taiko2k.tauonmb \
     au.com.shiftyjelly.pocketcasts \
