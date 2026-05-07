@@ -14,7 +14,9 @@ sudo apt install -y \
     ca-certificates \
     software-properties-common \
     apt-transport-https \
-    flatpak
+    flatpak \
+    ttf-mscorefonts-installer \
+    libdvdcss
 
 
 echo "=== Flathub aktivieren ==="
@@ -46,8 +48,8 @@ sudo apt install -y \
     skrooge \
     kaddressbook \
     akregator \
-    ksnip
-
+    ksnip \
+    neochat
 
 echo "=== LibreWolf Repository hinzufügen ==="
 wget -O- https://deb.librewolf.net/keyring.gpg | \
