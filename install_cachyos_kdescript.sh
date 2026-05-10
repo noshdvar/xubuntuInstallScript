@@ -19,8 +19,7 @@ sudo pacman -S --needed --noconfirm \
     ffmpeg \
     vlc \
     unzip \
-    unrar \
-    pamac-qt
+    unrar
 
 echo "=== Flathub aktivieren ==="
 sudo flatpak remote-add --if-not-exists flathub \
@@ -31,7 +30,7 @@ sudo pacman -S --needed --noconfirm \
     kate \
     partitionmanager \
     haruna \
-    doublecmd \
+    doublecmd-qt6 \
     handbrake \
     handbrake-cli \
     audacity \
@@ -58,8 +57,6 @@ sudo pacman -S --needed --noconfirm \
     plasma-disks \
     plasma-systemmonitor \
     ark \
-    extraterm-bin \
-    Audex \
     timeshift \
     fastfetch \
     htop \
@@ -71,7 +68,6 @@ sudo pacman -S --needed --noconfirm \
     nvtop \
     bottom \
     plasma-meta \
-    konsave \
     wl-clipboard \
     xdg-desktop-portal-kde \
     kwayland \
@@ -79,7 +75,6 @@ sudo pacman -S --needed --noconfirm \
     qpwgraph \
     digikam \
     scribus \
-    synchthing \
     ksnip \
     bitwarden
  
