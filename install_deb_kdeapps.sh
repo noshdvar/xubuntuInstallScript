@@ -62,7 +62,8 @@ sudo apt install -y \
     minder \
     krusader \
     thunderbird \
-    teamviewer 
+    teamviewer \
+    audex
 
 echo "=== LibreWolf Repository hinzufügen ==="
 wget -O- https://deb.librewolf.net/keyring.gpg | \
@@ -95,12 +96,6 @@ flatpak install -y flathub \
 echo "=== Helium ==="
 echo "Bitte manuell installieren (nicht sauber paketiert für Debian/MX):"
 echo "https://helium.computer"
-
-
-echo "=== Audex ==="
-echo "Audex ist je nach Debian/MX Repository eventuell nicht verfügbar."
-echo "Versuche Installation..."
-sudo apt install -y audex || true
 
 
 echo "=== Installation abgeschlossen ==="
