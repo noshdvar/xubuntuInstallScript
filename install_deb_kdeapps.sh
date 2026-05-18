@@ -16,7 +16,16 @@ sudo apt install -y \
     apt-transport-https \
     flatpak \
     ttf-mscorefonts-installer \
-    libdvdcss
+    libdvdcss \
+    ark \
+    bzip2 \
+    cpio \
+    hashdeep \
+    p7zip \
+    unrar \
+    rar \
+    unzip \
+    zip
 
 
 echo "=== Flathub aktivieren ==="
@@ -25,10 +34,13 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 
 echo "=== KDE / Debian Repo Anwendungen installieren ==="
 sudo apt install -y \
+    kde-cli-tools \
+    krename \
+    kio-extras \
+    kdiff3 \
     kate \
     partitionmanager \
     haruna \
-    doublecmd-qt \
     handbrake \
     audacity \
     rustdesk \
@@ -42,14 +54,15 @@ sudo apt install -y \
     krita \
     tellico \
     kget \
-    neochat \
     tokodon \
     kasts \
     skrooge \
-    kaddressbook \
     akregator \
     ksnip \
-    neochat
+    minder \
+    krusader \
+    thunderbird \
+    teamviewer 
 
 echo "=== LibreWolf Repository hinzufügen ==="
 wget -O- https://deb.librewolf.net/keyring.gpg | \
@@ -77,11 +90,6 @@ flatpak install -y flathub \
     com.bitwarden.desktop \
     io.github.kdiskmark.KDiskMark \
     org.telegram.desktop
-
-
-echo "=== Externer Terminal: ExtraTerm ==="
-echo "Bitte manuell installieren:"
-echo "https://extraterm.org"
 
 
 echo "=== Helium ==="
