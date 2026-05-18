@@ -65,6 +65,17 @@ sudo apt install -y \
     teamviewer \
     audex
 
+echo "=== Microsoft Edge Repository hinzufügen ==="
+# Download the Microsoft Edge repository key
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+# Add the Microsoft Edge repository
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main"
+# Update the package list
+sudo apt update
+# Install Microsoft Edge
+sudo apt install microsoft-edge-stable
+
+
 echo "=== LibreWolf Repository hinzufügen ==="
 wget -O- https://deb.librewolf.net/keyring.gpg | \
     sudo gpg --dearmor -o /usr/share/keyrings/librewolf.gpg
