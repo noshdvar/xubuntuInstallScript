@@ -25,7 +25,8 @@ sudo apt install -y \
     unrar \
     rar \
     unzip \
-    zip
+    zip \
+    fonts-jetbrains-mono
 
 
 echo "=== Flathub aktivieren ==="
