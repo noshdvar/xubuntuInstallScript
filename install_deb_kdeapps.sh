@@ -17,6 +17,7 @@ sudo apt install -y \
     flatpak \
     ttf-mscorefonts-installer \
     libdvdcss \
+    kasts \
     ark \
     bzip2 \
     cpio \
@@ -30,6 +31,7 @@ sudo apt install -y \
 
 echo "=== Flathub aktivieren ==="
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 
 echo "=== KDE / Debian Repo Anwendungen installieren ==="
 sudo apt install -y \
@@ -48,10 +50,10 @@ sudo apt install -y \
     krita \
     tellico \
     kget \
-    tokodon \
     kasts \
     skrooge \
     akregator \
+    ksnip \
     minder \
     krusader \
     teamviewer \
@@ -67,6 +69,7 @@ sudo apt update
 # Install Microsoft Edge
 sudo apt install microsoft-edge-stable
 
+
 echo "=== LibreWolf Repository hinzufügen ==="
 sudo apt update
 sudo apt install extrepo -y
@@ -75,20 +78,19 @@ sudo extrepo update librewolf
 sudo apt update
 sudo apt install -y librewolf
 
+
 echo "=== Flatpak Anwendungen installieren ==="
 flatpak install -y flathub \
-    io.github.mrvladus.List
+    io.github.mrvladus.List \
     com.spotify.Client \
-    io.anytype.anytype \
-    org.ksnip.ksnip \
     org.kde.plasmatube \
     com.github.taiko2k.tauonmb \
-    au.com.shiftyjelly.pocketcasts \
     com.github.jeromerobert.pdfarranger \
     im.riot.Riot \
     io.github.kdiskmark.KDiskMark \
-    org.telegram.desktop
-
+    org.telegram.desktop \
+    com.jgraph.drawio.desktop \
+    
 echo "=== Helium ==="
 echo "Bitte manuell installieren (nicht sauber paketiert für Debian/MX):"
 echo "https://helium.computer"
